@@ -1,9 +1,9 @@
 FROM ubuntu:trusty
 
-RUN echo 'deb http://archive.ubuntu.com/ubuntu trusty main' >/etc/apt/sources.list
-RUN echo 'deb http://archive.ubuntu.com/ubuntu trusty-security main' >>/etc/apt/sources.list
-RUN echo 'deb http://archive.ubuntu.com/ubuntu trusty-updates main' >>/etc/apt/sources.list
-RUN echo 'deb http://archive.ubuntu.com/ubuntu trusty universe' >>/etc/apt/sources.list
+RUN echo 'deb http://ports.ubuntu.com trusty main' >/etc/apt/sources.list
+RUN echo 'deb http://ports.ubuntu.com trusty-security main' >>/etc/apt/sources.list
+RUN echo 'deb http://ports.ubuntu.com trusty-updates main' >>/etc/apt/sources.list
+RUN echo 'deb http://ports.ubuntu.com trusty universe' >>/etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y --force-yes autoconf \
 curl \
